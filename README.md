@@ -58,7 +58,7 @@ Identity-Reconciliation/
 │   └── db.js                  # Database connection and credentials
 │
 ├── controllers/
-│   └── controller.js          # Contains route-specific business logic
+│   └── controller.js          # Contains business logic
 │
 ├── query/
 │   └── query.js               # Contains modular query functions
@@ -81,7 +81,7 @@ Identity-Reconciliation/
 
 1. Clone the repository
 2. cd `Identity-Reconciliation-`
-3. npm install
-4. set up database and schema as provided
-5. write credentials in db.js file or get them from .env
-5. node server.js --> run command to start the server
+3. npm install  ->> install dependencies
+4. Create the table using the provided schema.
+5. Update the database credentials in db.js or configure the .env file with your environment variables.
+6. node server.js --> run the server
