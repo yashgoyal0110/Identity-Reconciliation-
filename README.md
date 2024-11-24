@@ -56,4 +56,6 @@ This project is an **API-based identification service** that processes and handl
 1. Clone the repository:
 2. cd <Identity-Reconciliation->
 3. npm install
-4. node server.js
+4. set up database and schema as provided
+5. write credentials in db.js file or get them from .env
+5. node server.js --> run command to start the server
