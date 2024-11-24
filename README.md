@@ -53,7 +53,7 @@ This project is an **API-based identification service** that processes and handl
 
 ## How to Run
 
-1. Clone the repository:
+1. Clone the repository
 2. cd `Identity-Reconciliation-`
 3. npm install
 4. set up database and schema as provided
