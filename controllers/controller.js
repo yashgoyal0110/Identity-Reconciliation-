@@ -3,6 +3,7 @@ import {
   getRecordsByEmailAndPhone,
   getEmailsFromContact,
   getPhonesFromContact,
+  createRecord
 } from "../query/query.js";
 
 export const identifyContact = async (req, res) => {
