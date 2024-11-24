@@ -52,16 +52,22 @@ CREATE TABLE Contact (
 ## Project Structure
 
 .
-├── controllers
-│   └── controller.js         # Contains route-specific business logic
-├── query
-│   └── query.js              # Contains modular query functions
-├── routes
-│   └── route.js              # Defines the API routes using the router object
-├── server.js                 # Entry point of the application
-├── db.js                     # Database connection and credentials
-├── package.json              # Project dependencies and scripts
-└── .env                      # Environment variables (not included in version control)
+Identity-Reconciliation-/
+│
+├── controllers/
+│   └── controller.js          # Contains route-specific business logic
+│
+├── query/
+│   └── query.js               # Contains modular query functions
+│
+├── routes/
+│   └── route.js               # Defines the API routes using the router object
+│
+├── server.js                  # Entry point of the application
+├── db.js                      # Database connection and credentials
+├── package.json               # Project dependencies and scripts
+└── .env                       # Environment variables (not included in version control)
+
 
 
 ## How to Run
