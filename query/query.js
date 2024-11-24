@@ -17,17 +17,29 @@ export const getRecordsByEmailAndPhone = async (email, phoneNumber) => {
 };
 
 export const getEmailsFromContact = async (email) => {
-    const [emails] = await db.execute(`SELECT * FROM Contact WHERE email = ?`, [
-      email,
-    ]);
-    return emails;
-  };
-  
-  export const getPhonesFromContact = async (phone) => {
-    const [phones] = await db.execute(
-      `SELECT * FROM Contact WHERE phoneNumber = ?`,
-      [phone]
-    );
-    return phones;
-  };
+  const [emails] = await db.execute(`SELECT * FROM Contact WHERE email = ?`, [
+    email,
+  ]);
+  return emails;
+};
 
+export const getPhonesFromContact = async (phone) => {
+  const [phones] = await db.execute(
+    `SELECT * FROM Contact WHERE phoneNumber = ?`,
+    [phone]
+  );
+  return phones;
+};
+
+export const createRecord = async (
+  email,
+  phoneNumber,
+  linkedId = null,
+  linkPrecedence = "primary"
+) => {
+  const [newRecord] = await db.execute(
+    `INSERT INTO Contact (email, phoneNumber, linkedId, linkPrecedence, createdAt, updatedAt) VALUES (?, ?, ?, ?, NOW(), NOW())`,
+    [email, phoneNumber, linkedId, linkPrecedence]
+  );
+  return newRecord.insertId;
+};
