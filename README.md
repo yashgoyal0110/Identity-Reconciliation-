@@ -33,8 +33,10 @@ This project is an **API-based identification service** that processes and handl
     anywhere in the assignment to use ORMs that's why it implemented using Pool Query method
 
 5. **Table Schema:**
-    
-    Contact (
+   The database table schema used for the project is as follows:  
+
+```sql
+CREATE TABLE Contact (
     id INT AUTO_INCREMENT PRIMARY KEY,
     phoneNumber VARCHAR(15),
     email VARCHAR(255),
@@ -43,7 +45,7 @@ This project is an **API-based identification service** that processes and handl
     createdAt DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
     updatedAt DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
     deletedAt DATETIME DEFAULT NULL
-)
+);
    
      
 ## Project Structure
