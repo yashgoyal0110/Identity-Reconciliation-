@@ -51,7 +51,7 @@ CREATE TABLE Contact (
      
 ## Project Structure
 
-.
+```
 Identity-Reconciliation-/
 │
 ├── controllers/
@@ -67,6 +67,7 @@ Identity-Reconciliation-/
 ├── db.js                      # Database connection and credentials
 ├── package.json               # Project dependencies and scripts
 └── .env                       # Environment variables (not included in version control)
+```
 
 
 
