@@ -26,8 +26,8 @@ This project is an **API-based identification service** that processes and handl
 
 3. **Database and Query Management:**  
    - **Pool Query:**  
-     The project uses **Node.js**'s `pg` library with a connection pool for executing database queries. This approach provides flexibility and efficiency.
-
+     The project uses **Node.js** `mysql` library with a connection pool for executing database queries. This approach provides flexibility and efficiency, allowing multiple database connections to be handled concurrently.
+     
 4. **Prisma ORM:**
     - same project can also be done using ORMs like Prisma for easier interaction with database, but as it was not mentioned
     anywhere in the assignment to use ORMs that's why it implemented using Pool Query method
@@ -81,7 +81,7 @@ Identity-Reconciliation/
 
 1. Clone the repository
 2. cd `Identity-Reconciliation-`
-3. npm install  ->> install dependencies
+3. npm install  --> install dependencies
 4. Create the table using the provided schema.
 5. Update the database credentials in db.js or configure the .env file with your environment variables.
 6. node server.js --> run the server
