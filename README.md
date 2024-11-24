@@ -28,11 +28,11 @@ This project is an **API-based identification service** that processes and handl
    - **Pool Query:**  
      The project uses **Node.js** `mysql` library with a connection pool for executing database queries. This approach provides flexibility and efficiency, allowing multiple database connections to be handled concurrently.
      
-4. **Prisma ORM:**
+   **Prisma ORM:**
     - same project can also be done using ORMs like Prisma for easier interaction with database, but as it was not mentioned
     anywhere in the assignment to use ORMs that's why it implemented using Pool Query method
 
-5. **Table Schema:**
+   **Table Schema:**
    The database table schema used for the project is as follows:  
 
 ```sql
