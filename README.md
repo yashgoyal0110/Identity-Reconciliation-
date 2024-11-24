@@ -46,6 +46,7 @@ CREATE TABLE Contact (
     updatedAt DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
     deletedAt DATETIME DEFAULT NULL
 );
+```
    
      
 ## Project Structure
