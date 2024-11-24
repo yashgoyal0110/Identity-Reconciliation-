@@ -54,6 +54,9 @@ CREATE TABLE Contact (
 ```
 Identity-Reconciliation/
 │
+├── config/
+│   └── db.js                  # Database connection and credentials
+│
 ├── controllers/
 │   └── controller.js          # Contains route-specific business logic
 │
@@ -63,11 +66,13 @@ Identity-Reconciliation/
 ├── routes/
 │   └── route.js               # Defines the API routes using the router object
 │
+├── node_modules/              # Dependency folder (excluded from Git via .gitignore)
+│
 ├── server.js                  # Entry point of the application
-├── db.js                      # Database connection and credentials
 ├── package.json               # Project dependencies and scripts
 ├── package-lock.json          # Auto-generated file for exact dependency versions
-└── .env                       # Environment variables (not included in version control)  
+├── .env                       # Environment variables (not included in version control)
+└── .gitignore                 # Specifies files and folders to be excluded from Git
 ```
 
 
