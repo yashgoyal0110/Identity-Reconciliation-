@@ -4,6 +4,7 @@ import router from './routes/route.js';
 dotenv.config()
 const app = express();
 app.use(express.json());
+let PORT = 3000
 
 
 app.get('/', async(req, res)=>{
@@ -12,6 +13,6 @@ app.get('/', async(req, res)=>{
 
 app.use('/api/v1', router);
 
-app.listen(process.env.PORT, () => {
-    console.log(`Server running on port ${process.env.PORT}`);
+app.listen(PORT, () => {
+    console.log(`Server running on port ${PORT}`);
 });
